@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aydin.firebasedemo.signinController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="600.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/different_space_1c.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="lonin_username" layoutX="202.0" layoutY="104.0">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="lonin_password" layoutX="203.0" layoutY="185.0">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font></TextField>
+      <Text fill="#fbff00" layoutX="65.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Username:" />
+      <Text fill="YELLOW" layoutX="65.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password:" />
+      <Button fx:id="submit_password_button" layoutX="395.0" layoutY="145.0" mnemonicParsing="false" onAction="#submit_password_buttonClicked" style="-fx-background-color: rgba(255,255,100,0.5);" text="Submit" textFill="WHITE" />
+      <Pane layoutY="334.0" prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: rgba(20,20,20,0.5);" />
+   </children>
+</AnchorPane>

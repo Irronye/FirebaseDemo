@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aydin.firebasedemo.WelcomeController">
+   <children>
+      <ImageView fx:id="welcome_background_image_1" fitHeight="400.0" fitWidth="655.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Screenshot%202024-10-27%20005759.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="348.0" layoutY="36.0" prefHeight="37.0" prefWidth="200.0" style="-fx-border-color: gold;" text="Welcome to Goldenland">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="welcome_background_image_2" fitHeight="321.0" fitWidth="313.0" layoutX="291.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Screenshot%202024-10-27%20010203.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="123.0" prefWidth="291.0" style="-fx-background-color: rgba(255,255,255,0.5);" />
+      <TextArea editable="false" layoutX="46.0" layoutY="36.0" prefHeight="37.0" prefWidth="200.0" style="-fx-border-color: gold;" text="Welcome to Rokkenjima">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="registerButton" layoutX="117.0" layoutY="314.0" mnemonicParsing="false" onAction="#registerButtonClicked" style="-fx-background-color: rgba(255,255,100,0.5);" text="Register" textFill="WHITE" />
+      <Button fx:id="SignIn_Button" layoutX="421.0" layoutY="314.0" mnemonicParsing="false" onAction="#SignIn_ButtonClicked" style="-fx-background-color: rgba(255,255,100,0.5);" text="Sign In" textFill="WHITE" />
+      <TextField fx:id="WelcomenameTextField" layoutX="69.0" layoutY="166.0" promptText="name" />
+      <TextField fx:id="WelcomepasswordTextField" layoutX="69.0" layoutY="192.0" promptText="password" />
+      <TextField fx:id="WelcomephoneTextField" layoutX="69.0" layoutY="244.0" promptText="phone number" />
+      <TextField fx:id="WelcomeageTextField" layoutX="69.0" layoutY="270.0" promptText="age" />
+      <TextField fx:id="WelcomeemailTextField" layoutX="69.0" layoutY="218.0" promptText="email" />
+
+   </children>
+</AnchorPane>
